@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <title>IMAGE RECOGNITION</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+   
+  
+</head>
+<body>
+    <center>
+    <div class="btn btn-default">
+        <h2 class="text-capitalize">Image Recognition</h2>
+    </div>
+   <br>
+   <br>
+   <h5>Model is trained to identify following people (click on the names to see the image)</h3>
+   <br>
+   <div class="mother_objects" onclick="show_mom_img()">
+    Mother&nbsp;&nbsp;&nbsp;&nbsp;
+    <img id="mother_img">
+   </div>
+    <br>
+   <div class="my_objects" onclick="show_my_img()">
+    Varsha . D&nbsp;&nbsp;&nbsp;&nbsp;
+    <img id="my_img">
+   </div>
+   <br>
+   <div class="dad_objects" onclick="show_dad_img()">
+      Father&nbsp;&nbsp;&nbsp;&nbsp;
+      <img id="dad_img">
+     </div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <div class="col-lg-6">
+   <label>Webcam View - </label>
+   <br>
+   <br>
+      <div id="camera" ></div>
+      <br><br>
+      <button class="btn btn-warning" onclick="takeSnapshot()">Capture Image</button>
+      <br><br><br>
+      </div>
+      <div class="col-lg-6">
+   <label>Snapshot - </label>
+   <br>
+   <br>
+      <div id="snapshot"></div>  
+      <br><br>
+      <button class="btn btn-success" onclick="check()">Identify Image</button>
+      <br><br>
+      </div>  
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br> <br> <br>      
+      <div>
+      <p class="p" style="font-size: 22px; width: 400px;">Object : <span id="objectName" style="color: green;"></span> </p>
+      <p style="font-size: 22px; width: 400px;">Accuracy : <span id="accuracy" style="color: green;"></span> </p>
+      </div>
+   <script src="main.js"></script>
+</body>
+</html>

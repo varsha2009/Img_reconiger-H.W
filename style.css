@@ -1,0 +1,60 @@
+#mother_img{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+}
+#dad_img{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+}
+.mother_objects{
+    padding: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgb(160, 253, 253);
+    width: 60%;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+.dad_objects{
+    padding: 5px;
+    background-color: rgb(70, 206, 206);
+    width: 60%;
+    font-size: 24px;
+    text-align: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-family: 'Playfair Display', serif;
+}
+.my_objects{
+    padding: 5px;
+    background-color: rgb(51, 230, 230);
+    width: 60%;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+#my_img{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+}
+#camera{
+    border: 3px dotted black;
+    width: 350px;
+    height: 300px;
+}
+#snapshot{
+    border: 3px dotted black;
+    width: 350px;
+    height: 300px;
+}
+
+body {
+    background-image: radial-gradient(circle, rgb(246, 234, 125), rgb(221, 221, 107), rgb(182, 250, 54));
+}
+.p{
+    text-align: center;
+}
